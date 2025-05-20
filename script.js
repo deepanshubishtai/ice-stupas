@@ -15,82 +15,103 @@ const customIcon = L.divIcon({
     iconSize: [32, 32]
 });
 
-// Updated locations data with all information
+// Updated locations data with comprehensive information from the 2024-25 report
 const locations = [
     {
         position: [34.83568449, 77.47910294],
         title: "Ayee Village",
-        description: "We have successfully installed our automation system in Ayee village, located in Nubra Valley. Three fountains are now spraying water, and with the recent cold temperatures, ice has finally started to form. Ayee has approximately 40 households that rely on spring water for their needs. For the past five winters, the village has been building ice reservoirs, led by the Youth Association. Last winter, we connected with the community and conducted a preliminary site survey. During our visit, we observed their ice structure and discussed the challenges they faced during the construction process and potential improvements. This year, the project is funded by @nabardonline, and our entire team traveled to Ayee to set up the system. We also conducted drone surveys, taught the villagers how to operate the system, and addressed any issues on-site.",
+        description: "Ayee is a small village of approximately 40 households located in the Nubra Valley, around 200 km from Leh, near Kubet in the Panamic area. Situated at an altitude of 3,500 meters on the western side of the Siachen river, this community relies solely on a small spring for its water needs. The AIR system was installed on November 1, 2024, and achieved a maximum ice volume of 21 lakh litres by March 2025. The site was our warmest location with mean air temperatures of -2°C (with minimums reaching -11°C) and relatively warm water temperatures averaging 5°C. The automation worked exceptionally well at this location, with no pipeline freezing events recorded. Due to warmer conditions, the system would typically spray during the night when temperatures dropped sufficiently and remain off during daylight hours. Despite these operational challenges, Ayee demonstrated the best fountain water use efficiency at 20% among all project sites.",
         stats: {
-            households: "30+",
-            distance: "149 kms",
-            waterSources: "Chumik, Jal Jeevan, Chamak Karpo Chasma"
+            households: "40",
+            distance: "200 kms",
+            waterSources: "Small spring",
+            iceVolume: "21 lakh litres",
+            efficiency: "20%",
+            fundedBy: "NABARD"
         },
         image: "images/ayee.jpg"
     },
     {
         position: [33.92229758, 77.88109547],
         title: "Igoo Village",
-        description: "Our primary motive this winter was to implement a scalable and easy to maintain ice reservoir that can function autonomously in any remote environment. Contrary to expectations, this meant we had to pick our pilot sites so that they were representative of some of the hardest locations to build ice reservoirs worldwide. Igoo was one such location. More than 2 months have passed since our automation system began constructing Igoo's ice reservoir. Our expectation was that our automated ice reservoir will spray to freeze water only when weather conditions are ideal and would keep the pipeline free of water during the rest of the time. However, for only half this duration, the automated ice reservoir was operating as expected. The rest of the days it was either being manually operated or the fountain pipeline system was frozen.",
+        description: "Igoo, with around 260 households, is a south-facing village in the Indus belt located in a 10 km long narrow valley, situated 50 km east of Leh. The community is positioned at an elevation between 3,300-4,100 meters and has a natural glacier about 6 km from the AIR site at an altitude above 5,400 meters. The 2024-25 season marked our second winter of ice reservoir development in Igoo. The automated system achieved a maximum ice volume of 41 lakh litres by March 13, 2025, representing a significant 33% increase compared to the previous year. The site experienced mean air temperatures of -8°C (with minimums reaching -20°C), ideal water temperatures averaging 4°C, and discharge rates averaging 3.5 liters per second. The automation system kept the fountain spraying for around 90% of the time until March 2025, with no pipeline freezing events recorded throughout the entire season. However, fountain water use efficiency was poor at only 13%.",
         stats: {
-            households: "200+",
-            distance: "49 kms",
-            waterSources: "Chumik, Jal Jeevan"
+            households: "260",
+            distance: "50 kms",
+            waterSources: "Natural glacier, Igoo Tso (glacial lake)",
+            iceVolume: "41 lakh litres",
+            efficiency: "13%",
+            fundedBy: "NABARD"
         },
         image: "images/igoo.jpg"
     },
     {
         position: [34.22027778, 76.89722222],
         title: "Ursi Village",
-        description: "Ursi is a small village located in the mountains between the Zanskar and Indus rivers. With around 20 households situated at an altitude of 3,700 meters, the village relies on spring water for sustenance. However, residents have been facing significant water shortages at the beginning of the agricultural season. Many locals have reported that these issues have developed over the past two decades, negatively impacting their livelihoods. To address these challenges, the community began constructing ice reservoirs a few years ago, achieving moderate success. This year, with funding from @mercycorps, we have installed our automated system in Ursi. The system is now operational and successfully constructing ice during the cold weather periods.",
+        description: "Ursi is a remote mountain village situated at an altitude of 3,700 meters, nestled between the Zanskar and Indus rivers. With only 16 households, it is one of the smallest communities in the project. The village has historically faced severe water shortages, relying solely on spring sources with no natural glacier in the area. The AIR system was installed on November 14, 2024, and achieved an impressive maximum ice volume of 46 lakh litres, making it the largest ice reservoir among all project sites. The site data showed mean air temperatures of -4°C (with minimums reaching -13°C) and moderate water temperatures averaging 4°C. This location presented the most challenging installation environment, requiring crossing a hill, climbing difficult terrain, and manually transporting all equipment including heavy pipes. However, the entire village community came together to assist with the project, demonstrating strong local buy-in. This marked the seventh consecutive year of ice stupa construction in Ursi, but the first using automated technology.",
         stats: {
-            households: "19+",
+            households: "16",
             distance: "121 kms",
-            waterSources: "Chumik"
+            waterSources: "Small spring (no natural glacier)",
+            iceVolume: "46 lakh litres",
+            efficiency: "Not measured",
+            fundedBy: "Mercy Corps Ventures"
         },
         image: "images/ursi.jpg"
     },
     {
         position: [33.7639167, 77.8610556],
-        title: "Tunah Village",
-        description: "Information about Tunah village's ice reservoir project coming soon.",
+        title: "Tuna Village",
+        description: "Tuna is a small hamlet of only 5 households situated at an elevation of 3,939 meters. Despite its small size, the area is rich in wildlife and biodiversity. The community faces severe water challenges, which have been exacerbated by a series of natural disasters over recent years, including flash floods in 2006, 2010, and 2019. These events have dramatically diminished spring water availability and blocked traditional water channels. The AIR system was installed on January 9, 2025, making it the last site to be established in our implementation schedule. Due to improper choice of water source, our systems had to be shifted 2 km higher than the old location around mid-February, which shortened the freezing window and made measurement campaigns difficult. The site experienced mean air temperatures of -5°C (with minimums reaching -14°C) and water temperatures averaging 2°C. Comprehensive ice volume data and efficiency metrics are not available for this location.",
         stats: {
-            households: "7+",
+            households: "5",
             distance: "56 kms",
-            waterSources: "Chumik"
+            waterSources: "Spring water (diminished by flash floods)",
+            iceVolume: "Data not available",
+            efficiency: "Data not available",
+            fundedBy: "Mercy Corps Ventures"
         },
         image: "images/tunah.jpg"
     },
     {
         position: [34.06350485, 77.82494797],
         title: "Sakti Village",
-        description: "Sakti is a large village with approximately 800 households, spread across the valleys of Chang La and Wari La Passes. The residents have traditionally relied on ice terraces for their agricultural water needs, particularly from the Wari La side, which features several layers of stone walls built down the valley. This year, with the assistance of the Irrigation and Flood Control Department, we have established an automated ice reservoir system, which was inaugurated last week.",
+        description: "Sakti is a large village with approximately 360 households, situated 55 km east of Leh at an elevation of 4,470 meters. The village is positioned above Chemre and Kharu, with which it shares the same water sources, and is located within a remarkable wildlife hotspot. The AIR system was installed on December 9, 2024, and achieved a maximum ice volume of 18 lakh litres. This location proved to be our highest and harshest site, experiencing the coldest conditions with mean air temperatures of -10°C and minimums reaching -22°C. Water temperatures averaged just 2°C, creating a narrow operational window for the automated system. Unlike other sites where weather conditions primarily constrained spray decisions, at Sakti, water temperature was the limiting factor, resulting in the lowest percentage of active spray time (around 62%) among all implementation locations. The site recorded approximately four pipeline freezing events throughout the season, requiring weekly maintenance visits.",
         stats: {
-            households: "800+",
-            distance: "47 kms",
-            waterSources: "Chumik"
+            households: "360",
+            distance: "55 kms",
+            waterSources: "Two glaciers (Warila and Changla)",
+            iceVolume: "18 lakh litres",
+            efficiency: "6%",
+            fundedBy: "Irrigation and Flood Control Department"
         },
         image: "images/sakti.jpg"
     },
     {
         position: [34.12639019, 77.70943888],
         title: "Stakmo Village",
-        description: "Details about Stakmo village's ice reservoir project coming soon.",
+        description: "Stakmo is a small village of approximately 40 households located 30 km from Leh, above Thiksay, at an elevation of 3,910 meters. The community relies primarily on a small glacier and a few natural springs as its main water sources. The AIR system was installed on December 2, 2024, and achieved a maximum ice volume of 27 lakh litres. The implementation faced an early challenge when villagers decided to lower the water source below the Jal Jeevan pipes, requiring removal and reinstallation of the entire pipeline system. The pipeline became the second-longest among all project sites, increasing vulnerability to freezing events. The system operated under moderately cold conditions with mean air temperatures of -6°C (with minimums reaching -16°C) and water temperatures averaging 2°C. Discharge rates averaged 2.2 liters per second, with the automation system maintaining fountain spray 97% of the time until March. However, water use efficiency was poor at 17%. This represents the first successful ice reservoir in Stakmo since the 2010 flash floods destroyed previous structures.",
         stats: {
-            households: "-",
-            distance: "21 kms",
-            waterSources: "Chumik"
+            households: "40",
+            distance: "30 kms",
+            waterSources: "Small glacier, natural springs",
+            iceVolume: "27 lakh litres",
+            efficiency: "17%",
+            fundedBy: "Mercy Corps Ventures"
         },
         image: "images/stakmo.jpg"
     },
     {
         position: [34.31777778, 77.23805556],
         title: "Likir Village",
-        description: "Likir, a village of around 200 households located in Sham Valley, is known for its apricots. At the start of the agricultural season, the village faces a seasonal water shortage, which mainly affects agrarian productivity due to the unpredictability of winter precipitation. In a collaboration with Leh's Irrigation and Flood Control Department, we have successfully installed our automated ice reservoir system in Likir and will continue to monitor it over the next several months.",
+        description: "Likir, with approximately 300 households, is a vibrant village located 60 km west of Leh at an elevation of 4,470 meters. Agriculture serves as the primary livelihood for residents, with tourism providing a secondary source of income. The village is renowned for its agricultural products, particularly apricots and peas. The AIR system was installed on November 27, 2024, in collaboration with the Irrigation and Flood Control Department, and achieved a maximum ice volume of 31 lakh litres by March 19, 2025. The site utilized a unique water source that combined glacial and spring water—an innovative approach suggested by the community themselves. The system performed well under the site's specific conditions, with mean water temperatures of 3°C and average air temperatures of -6°C (with minimums reaching -17°C). The site's data showed moderate discharge rates averaging 1.70 liters per second. The automation system kept the fountain spraying for around 90% of the time until March 2025, with fountain water use efficiency at 20%.",
         stats: {
-            households: "200",
-            distance: "49 kms",
-            waterSources: "Chumik Setap, Chumik Stajurma, Jal Jeevan"
+            households: "300",
+            distance: "60 kms",
+            waterSources: "Natural glacier, springs, combined water source",
+            iceVolume: "31 lakh litres",
+            efficiency: "20%",
+            fundedBy: "Irrigation and Flood Control Department"
         },
         image: "images/likir.jpg"
     }
@@ -165,6 +186,36 @@ function updateSidebar(location) {
                     </div>
                 </div>
                 ` : ''}
+                
+                ${location.stats.iceVolume ? `
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-icicles"></i></div>
+                    <div class="stat-content">
+                        <div class="stat-label">Maximum Ice Volume</div>
+                        <div class="stat-value">${location.stats.iceVolume}</div>
+                    </div>
+                </div>
+                ` : ''}
+                
+                ${location.stats.efficiency ? `
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-percentage"></i></div>
+                    <div class="stat-content">
+                        <div class="stat-label">Water Use Efficiency</div>
+                        <div class="stat-value">${location.stats.efficiency}</div>
+                    </div>
+                </div>
+                ` : ''}
+                
+                ${location.stats.fundedBy ? `
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-hands-helping"></i></div>
+                    <div class="stat-content">
+                        <div class="stat-label">Funded By</div>
+                        <div class="stat-value">${location.stats.fundedBy}</div>
+                    </div>
+                </div>
+                ` : ''}
             </div>
         `;
     }
@@ -199,7 +250,7 @@ toggleBtn.addEventListener('click', () => {
 // Share functions
 function shareOnTwitter() {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent('Check out this interactive map of ice reservoir projects in Ladakh villages!');
+    const text = encodeURIComponent('Explore the Automated Ice Reservoir (AIR) projects in Ladakh - innovative water management solutions by Acres of Ice for high-altitude communities facing climate change.');
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
 }
 
